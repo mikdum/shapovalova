@@ -1,72 +1,163 @@
 <!doctype html>
 <html lang="fi">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f7f5f0">
-<meta name="description" content="Klassista hierontaa Punkaharjulla. Tutustu klassiseen hierontaan, niska-hartiahierontaan ja alavartalon hierontaan. Myös kotikäynnit Punkaharjulla ja Savonlinnassa. Varaa WhatsAppissa.">
-<title>Iuliia Shapovalova | Klassista hierontaa Punkaharjulla</title>
-<style>
-:root{--paper:#f7f5f0;--ink:#37443b;--muted:#68746a;--sage:#e8ebe3;--line:#d9ddd3;--white:#fffdf9}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
-a{color:inherit}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}header{padding:24px 0;border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-size:1.05rem;letter-spacing:.09em;font-weight:700;text-decoration:none}.nav small{font-size:.72rem;letter-spacing:.13em;color:var(--muted)}
-.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding:76px 0 86px}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;color:var(--muted);font-weight:700}
-h1,h2,p{margin-top:0}h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(2.7rem,6vw,5.2rem);line-height:1.04;letter-spacing:-.045em;margin:18px 0 24px}
-.lead{font-size:1.1rem;max-width:470px;color:#536052}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;justify-content:center;align-items:center;padding:13px 20px;border:1px solid #7d8b78;border-radius:3px;text-decoration:none;font-weight:700;font-size:.92rem;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-1px)}.btn-primary{background:#7d8b78;color:white;border-color:#7d8b78}.btn-secondary{background:transparent}
-.photo-placeholder{min-height:420px;background:var(--sage);border-radius:3px;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;position:relative;overflow:hidden}.photo-inner{position:relative;z-index:1;max-width:230px}.photo-inner strong{display:block;font-family:Georgia,serif;font-size:1.6rem;font-weight:400}.photo-inner span{display:block;font-size:.85rem;color:var(--muted);margin-top:8px}
-section{padding:68px 0;border-top:1px solid var(--line)}.section-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}h2{font-family:Georgia,serif;font-size:clamp(2rem,4vw,3.1rem);font-weight:400;line-height:1.12;margin:12px 0 20px}.body-copy{max-width:600px;color:#536052}
-.service-list{display:grid;gap:14px}.travel-row{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--line)}.service-card{background:var(--white);border:1px solid var(--line);padding:28px;border-radius:3px}.service-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}.service-top h3{font-family:Georgia,serif;font-weight:400;font-size:1.55rem;margin:0}.price{font-size:1.35rem;font-weight:700;white-space:nowrap}.service-meta{color:var(--muted);font-size:.9rem;margin:8px 0 20px}
-.booking{background:var(--sage)}.booking .section-grid{align-items:start}.booking-card{background:var(--white);padding:28px;border:1px solid rgba(52,71,59,.12);border-radius:3px}label{display:block;font-size:.86rem;font-weight:700;margin:0 0 7px}
-input,select,textarea{width:100%;font:inherit;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:3px;padding:12px 13px;margin-bottom:17px}input:focus,select:focus,textarea:focus{outline:2px solid #8c9b87;outline-offset:1px}.form-note{font-size:.82rem;color:var(--muted);margin:0 0 18px}.full{width:100%;cursor:pointer}
-.contact-line{font-size:1.05rem;margin-bottom:10px}footer{padding:24px 0;color:var(--muted);font-size:.82rem}.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
-@media(max-width:760px){.hero,.section-grid{grid-template-columns:1fr;gap:30px}.hero{padding:50px 0 58px}.photo-placeholder{min-height:300px}.nav{align-items:flex-start;flex-direction:column;gap:8px}section{padding:52px 0}.wrap{width:min(100% - 32px,1080px)}}
 
-/* Hento laventeli: kolmas, hillitty visuaalinen korostus */
-:root{--lavender:#a38cb1;--lavender-soft:#f1ebf1}
-.photo-placeholder{background:linear-gradient(140deg,#f0e9ed 0%,#e8ebe3 80%)}
-.photo-placeholder::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 25%,rgba(163,140,177,.20),transparent 44%)}
-.lavender-art{width:min(245px,75%);height:auto;display:block;margin:0 auto 18px;filter:drop-shadow(0 9px 13px rgba(65,64,57,.07))}
-.photo-inner{max-width:310px}.photo-inner strong{font-size:1.4rem}
-.lavender-rule{width:64px;height:2px;background:var(--lavender);margin:18px 0 22px}
-.service-card:nth-child(2){border-left:3px solid var(--lavender)}
-.booking{background:linear-gradient(110deg,#e8ebe3,#f1ebf1)}
-@media(max-width:760px){.lavender-art{width:170px}}
-</style></head>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f7f5f0">
+	<meta name="description"
+		content="Klassista hierontaa Punkaharjulla. Tutustu klassiseen hierontaan, niska-hartiahierontaan ja alavartalon hierontaan. Myös kotikäynnit Punkaharjulla ja Savonlinnassa. Varaa WhatsAppissa.">
+	<title>Iuliia Shapovalova | Klassista hierontaa Punkaharjulla</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
 <body>
-<header><div class="wrap nav"><a class="brand" href="#alku">IULIIA SHAPOVALOVA</a><small>KLASSISTA HIERONTAA · PUNKAHARJU</small></div></header>
-<main>
-<div class="wrap hero" id="alku"><div><div class="eyebrow">Hyvinvointia ja palautumista</div><h1>Anna itsellesi hetki.</h1><div class="lavender-rule" aria-hidden="true"></div><p class="lead">Hierontaa rauhallisessa ja kiireettömässä tunnelmassa Punkaharjulla. Myös kotikäynnit Punkaharjulla ja Savonlinnassa.</p><div class="actions"><a class="btn btn-primary" href="#varaa">Varaa hieronta</a><a class="btn btn-secondary" href="#palvelut">Tutustu palveluun</a></div></div>
-<div class="photo-placeholder" aria-label="Kuva hierontatilasta lisätään myöhemmin"><div class="photo-inner"><svg class="lavender-art" viewBox="0 0 250 250" role="img" aria-label="Laventelin oksia" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#788b72" stroke-width="2.2" stroke-linecap="round"><path d="M123 235 Q132 148 99 42"/><path d="M125 235 Q153 154 184 57"/><path d="M125 235 Q106 174 56 113"/><path d="M128 190 Q151 181 165 172"/><path d="M117 190 Q91 183 76 170"/></g><g fill="#9d87b0"><ellipse cx="99" cy="45" rx="7" ry="13" transform="rotate(-17 99 45)"/><ellipse cx="90" cy="64" rx="7" ry="12" transform="rotate(-40 90 64)"/><ellipse cx="109" cy="69" rx="7" ry="12" transform="rotate(18 109 69)"/><ellipse cx="96" cy="88" rx="7" ry="12" transform="rotate(-38 96 88)"/><ellipse cx="116" cy="95" rx="7" ry="12" transform="rotate(22 116 95)"/><ellipse cx="104" cy="114" rx="7" ry="12" transform="rotate(-35 104 114)"/><ellipse cx="183" cy="60" rx="7" ry="13" transform="rotate(18 183 60)"/><ellipse cx="170" cy="78" rx="7" ry="12" transform="rotate(-20 170 78)"/><ellipse cx="189" cy="88" rx="7" ry="12" transform="rotate(42 189 88)"/><ellipse cx="161" cy="106" rx="7" ry="12" transform="rotate(-25 161 106)"/><ellipse cx="179" cy="113" rx="7" ry="12" transform="rotate(35 179 113)"/><ellipse cx="57" cy="116" rx="7" ry="12" transform="rotate(-40 57 116)"/><ellipse cx="48" cy="137" rx="7" ry="12" transform="rotate(-45 48 137)"/><ellipse cx="69" cy="136" rx="7" ry="12" transform="rotate(20 69 136)"/><ellipse cx="61" cy="157" rx="7" ry="12" transform="rotate(-40 61 157)"/></g><g fill="#8b9c82"><path d="M121 211Q94 184 78 191Q96 211 121 211Z"/><path d="M133 203Q157 175 175 183Q157 202 133 203Z"/></g></svg><strong>Kuva lisätään pian</strong><span>Tähän tulee kuva Iuliiasta tai hoitotilasta.</span></div></div></div>
-<section id="minusta"><div class="wrap section-grid"><div><div class="eyebrow">Minusta</div><h2>Henkilökohtaista huolenpitoa.</h2></div><div class="body-copy"><p>Hei, olen Iuliia Shapovalova. Tarjoan hierontapalveluja Punkaharjulla ja haluan luoda rauhallisen hetken, jossa voit pysähtyä arjen keskellä.</p><p>Hierontahetki suunnitellaan toiveidesi mukaan, jotta voit rentoutua ja keskittyä omaan hyvinvointiisi.</p></div></div></section>
-<section id="palvelut"><div class="wrap section-grid"><div><div class="eyebrow">Palvelut ja hinnat</div><h2>Yksinkertaisesti hyvää oloa.</h2><p class="body-copy">Valitse itsellesi sopiva hieronta. Kotikäynnit ovat saatavilla Punkaharjulla ja Savonlinnassa lisämaksusta.</p></div><div class="service-list">
-<div class="service-card"><div class="service-top"><h3>Klassinen hieronta</h3><div class="price">30 €</div></div><div class="service-meta">60 minuuttia</div><p>Rauhallinen hierontahetki yksilöllisten tarpeidesi mukaan.</p></div>
-<div class="service-card"><div class="service-top"><h3>Niskahieronta</h3><div class="price">20 €</div></div><div class="service-meta">30 minuuttia</div><p>Hierontaa niskan ja hartioiden alueelle.</p></div>
-<div class="service-card"><div class="service-top"><h3>Alavartalon hieronta</h3><div class="price">30 €</div></div><div class="service-meta">45 minuuttia</div><p>Hierontaa alavartalon alueelle.</p></div>
-<div class="service-card"><div class="eyebrow">Kotikäynnit</div><div class="travel-row"><span>Punkaharju</span><strong>+10 €</strong></div><div class="travel-row"><span>Savonlinna</span><strong>+20 €</strong></div><p class="service-meta">Kotikäyntilisä lisätään valitun hieronnan hintaan.</p></div>
-<a class="btn btn-primary" href="#varaa">Varaa aika</a>
-</div></div></section>
-<section class="booking" id="varaa"><div class="wrap section-grid"><div><div class="eyebrow">Varaa aika</div><h2>Otetaan sinulle sopiva aika.</h2><p class="body-copy">Täytä tiedot, niin WhatsApp avautuu valmiiksi kirjoitetulla viestillä. Vahvistan ajan erikseen viestitse.</p><p class="body-copy"><strong>Huom:</strong> ajanvaraus ei tarkista automaattisesti vapaita aikoja.</p></div>
-<form class="booking-card" id="bookingForm"><label for="name">Nimi</label><input id="name" name="name" autocomplete="name" placeholder="Etunimi ja sukunimi" required>
-<label for="phone">Puhelinnumero</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Puhelinnumerosi" required>
-<label for="service">Valitse hieronta</label><select id="service" name="service" required><option value="">Valitse palvelu</option><option value="classic">Klassinen hieronta · 60 min · 30 €</option><option value="neck">Niskahieronta · 30 min · 20 €</option><option value="lower">Alavartalon hieronta · 45 min · 30 €</option></select>
-<label for="location">Hieronnan paikka</label><select id="location" name="location" required><option value="">Valitse paikka</option><option value="studio">Punkaharju (ei kotikäyntiä) · +0 €</option><option value="punkaharju">Kotikäynti Punkaharjulla · +10 €</option><option value="savonlinna">Kotikäynti Savonlinnassa · +20 €</option></select>
-<p id="total" class="form-note" aria-live="polite">Valitse palvelu ja paikka nähdäksesi kokonaishinnan.</p>
-<label for="date">Toivottu päivämäärä</label><input id="date" name="date" type="date" required>
-<label for="time">Toivottu kellonaika</label><select id="time" name="time" required><option value="">Valitse kellonaika</option><option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option>18:00</option></select>
-<label for="message">Lisätietoja (vapaaehtoinen)</label><textarea id="message" name="message" rows="3" placeholder="Voit kirjoittaa tähän lisätietoja"></textarea><p class="form-note">Painamalla painiketta siirryt WhatsAppiin lähettämään varauspyynnön.</p><button class="btn btn-primary full" type="submit">Lähetä varauspyyntö WhatsAppissa</button></form></div></section>
-<section id="yhteystiedot"><div class="wrap section-grid"><div><div class="eyebrow">Yhteystiedot</div><h2>Nähdään Punkaharjulla.</h2></div><div><p class="contact-line"><strong>Iuliia Shapovalova</strong></p><p class="contact-line">Punkaharju, Suomi</p><p class="contact-line"><a href="https://wa.me/358417945460" target="_blank" rel="noopener">WhatsApp: +358 41 794 5460</a></p><a class="btn btn-secondary" href="https://wa.me/358417945460" target="_blank" rel="noopener">Ota yhteyttä WhatsAppissa</a></div></div></section>
-</main><footer><div class="wrap footer-row"><span>© <span id="year"></span> Iuliia Shapovalova</span><span>Klassista hierontaa · Punkaharju</span></div></footer>
-<script>
-const phoneNumber="358417945460";
-const services={classic:{label:"Klassinen hieronta, 60 min",price:30},neck:{label:"Niskahieronta, 30 min",price:20},lower:{label:"Alavartalon hieronta, 45 min",price:30}};
-const locations={studio:{label:"Punkaharju (ei kotikäyntiä)",extra:0},punkaharju:{label:"Kotikäynti Punkaharjulla",extra:10},savonlinna:{label:"Kotikäynti Savonlinnassa",extra:20}};
-function updateTotal(){const service=services[document.getElementById("service").value],location=locations[document.getElementById("location").value];document.getElementById("total").textContent=service&&location?"Yhteensä: "+(service.price+location.extra)+" € (hieronta "+service.price+" € + kotikäyntilisä "+location.extra+" €)":"Valitse palvelu ja paikka nähdäksesi kokonaishinnan.";}
-document.getElementById("service").addEventListener("change",updateTotal);document.getElementById("location").addEventListener("change",updateTotal);
-document.getElementById("year").textContent=new Date().getFullYear();
-const dateInput=document.getElementById("date");const today=new Date();dateInput.min=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);
-document.getElementById("bookingForm").addEventListener("submit",function(event){event.preventDefault();
-const name=document.getElementById("name").value.trim(),phone=document.getElementById("phone").value.trim(),date=dateInput.value,time=document.getElementById("time").value,message=document.getElementById("message").value.trim();
-const service=services[document.getElementById("service").value],location=locations[document.getElementById("location").value];
-const text=["Hei Iuliia! Haluaisin varata hieronta-ajan.","","Nimi: "+name,"Puhelinnumero: "+phone,"Palvelu: "+service.label+" ("+service.price+" €)","Paikka: "+location.label+" (lisämaksu "+location.extra+" €)","Yhteensä: "+(service.price+location.extra)+" €","Toivottu aika: "+date+" klo "+time,message?"Lisätietoja: "+message:""].filter(Boolean).join("\n");
-window.open("https://wa.me/"+phoneNumber+"?text="+encodeURIComponent(text),"_blank","noopener");});
-</script></body></html>
+	<header>
+		<div class="wrap nav"><a class="brand" href="#alku">IULIIA SHAPOVALOVA</a><small>KLASSISTA HIERONTAA ·
+				PUNKAHARJU</small></div>
+	</header>
+	<main>
+		<div class="wrap hero" id="alku">
+			<div>
+				<div class="eyebrow">Hyvinvointia ja palautumista</div>
+				<h1>Anna itsellesi hetki.</h1>
+				<div class="lavender-rule" aria-hidden="true"></div>
+				<p class="lead">Hierontaa rauhallisessa ja kiireettömässä tunnelmassa Punkaharjulla. Myös kotikäynnit
+					Punkaharjulla ja Savonlinnassa.</p>
+				<div class="actions"><a class="btn btn-primary" href="#varaa">Varaa hieronta</a><a
+						class="btn btn-secondary" href="#palvelut">Tutustu palveluun</a></div>
+			</div>
+			<div class="photo-inner">
+				<img src="./img/img1.jpeg" alt="Laventelin oksia">
+			</div>
+		</div>
+		<section id="minusta">
+			<div class="wrap section-grid">
+				<div>
+					<div class="eyebrow">Minusta</div>
+					<h2>Henkilökohtaista huolenpitoa.</h2>
+				</div>
+				<div class="body-copy">
+					<p>Hei, olen Iuliia Shapovalova. Tarjoan hierontapalveluja Punkaharjulla ja haluan luoda rauhallisen
+						hetken, jossa voit pysähtyä arjen keskellä.</p>
+					<p>Hierontahetki suunnitellaan toiveidesi mukaan, jotta voit rentoutua ja keskittyä omaan
+						hyvinvointiisi.</p>
+				</div>
+			</div>
+		</section>
+		<section id="palvelut">
+			<div class="wrap section-grid">
+				<div>
+					<div class="eyebrow">Palvelut ja hinnat</div>
+					<h2>Yksinkertaisesti hyvää oloa.</h2>
+					<p class="body-copy">Valitse itsellesi sopiva hieronta. Kotikäynnit ovat saatavilla Punkaharjulla ja
+						Savonlinnassa lisämaksusta.</p>
+				</div>
+				<div class="service-list">
+					<div class="service-card">
+						<div class="service-top">
+							<h3>Klassinen hieronta</h3>
+							<div class="price">30 €</div>
+						</div>
+						<div class="service-meta">60 minuuttia</div>
+						<p>Rauhallinen hierontahetki yksilöllisten tarpeidesi mukaan.</p>
+					</div>
+					<div class="service-card">
+						<div class="service-top">
+							<h3>Niskahieronta</h3>
+							<div class="price">20 €</div>
+						</div>
+						<div class="service-meta">30 minuuttia</div>
+						<p>Hierontaa niskan ja hartioiden alueelle.</p>
+					</div>
+					<div class="service-card">
+						<div class="service-top">
+							<h3>Alavartalon hieronta</h3>
+							<div class="price">30 €</div>
+						</div>
+						<div class="service-meta">45 minuuttia</div>
+						<p>Hierontaa alavartalon alueelle.</p>
+					</div>
+					<div class="service-card">
+						<div class="eyebrow">Kotikäynnit</div>
+						<div class="travel-row"><span>Punkaharju</span><strong>+10 €</strong></div>
+						<div class="travel-row"><span>Savonlinna</span><strong>+20 €</strong></div>
+						<p class="service-meta">Kotikäyntilisä lisätään valitun hieronnan hintaan.</p>
+					</div>
+					<a class="btn btn-primary" href="#varaa">Varaa aika</a>
+				</div>
+			</div>
+		</section>
+		<section class="booking" id="varaa">
+			<div class="wrap section-grid">
+				<div>
+					<div class="eyebrow">Varaa aika</div>
+					<h2>Otetaan sinulle sopiva aika.</h2>
+					<p class="body-copy">Täytä tiedot, niin WhatsApp avautuu valmiiksi kirjoitetulla viestillä.
+						Vahvistan ajan erikseen viestitse.</p>
+					<p class="body-copy"><strong>Huom:</strong> ajanvaraus ei tarkista automaattisesti vapaita aikoja.
+					</p>
+				</div>
+				<form class="booking-card" id="bookingForm"><label for="name">Nimi</label><input id="name" name="name"
+						autocomplete="name" placeholder="Etunimi ja sukunimi" required>
+					<label for="phone">Puhelinnumero</label><input id="phone" name="phone" type="tel" autocomplete="tel"
+						placeholder="Puhelinnumerosi" required>
+					<label for="service">Valitse hieronta</label><select id="service" name="service" required>
+						<option value="">Valitse palvelu</option>
+						<option value="classic">Klassinen hieronta · 60 min · 30 €</option>
+						<option value="neck">Niskahieronta · 30 min · 20 €</option>
+						<option value="lower">Alavartalon hieronta · 45 min · 30 €</option>
+					</select>
+					<label for="location">Hieronnan paikka</label><select id="location" name="location" required>
+						<option value="">Valitse paikka</option>
+						<option value="studio">Punkaharju (ei kotikäyntiä) · +0 €</option>
+						<option value="punkaharju">Kotikäynti Punkaharjulla · +10 €</option>
+						<option value="savonlinna">Kotikäynti Savonlinnassa · +20 €</option>
+					</select>
+					<p id="total" class="form-note" aria-live="polite">Valitse palvelu ja paikka nähdäksesi
+						kokonaishinnan.</p>
+					<label for="date">Toivottu päivämäärä</label><input id="date" name="date" type="date" required>
+					<label for="time">Toivottu kellonaika</label><select id="time" name="time" required>
+						<option value="">Valitse kellonaika</option>
+						<option>09:00</option>
+						<option>10:00</option>
+						<option>11:00</option>
+						<option>12:00</option>
+						<option>13:00</option>
+						<option>14:00</option>
+						<option>15:00</option>
+						<option>16:00</option>
+						<option>17:00</option>
+						<option>18:00</option>
+					</select>
+					<label for="message">Lisätietoja (vapaaehtoinen)</label><textarea id="message" name="message"
+						rows="3" placeholder="Voit kirjoittaa tähän lisätietoja"></textarea>
+					<p class="form-note">Painamalla painiketta siirryt WhatsAppiin lähettämään varauspyynnön.</p><button
+						class="btn btn-primary full" type="submit">Lähetä varauspyyntö WhatsAppissa</button>
+				</form>
+			</div>
+		</section>
+		<section id="yhteystiedot">
+			<div class="wrap section-grid">
+				<div>
+					<div class="eyebrow">Yhteystiedot</div>
+					<h2>Nähdään Punkaharjulla.</h2>
+				</div>
+				<div>
+					<p class="contact-line"><strong>Iuliia Shapovalova</strong></p>
+					<p class="contact-line">Punkaharju, Suomi</p>
+					<p class="contact-line"><a href="https://wa.me/358417945460" target="_blank"
+							rel="noopener">WhatsApp: +358 41 794 5460</a></p><a class="btn btn-secondary"
+						href="https://wa.me/358417945460" target="_blank" rel="noopener">Ota yhteyttä WhatsAppissa</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="wrap footer-row"><span>© <span id="year"></span> Iuliia Shapovalova</span><span>Klassista hierontaa
+				· Punkaharju</span></div>
+	</footer>
+	<script src="./script.js" defer></script>
+</body>
+
+</html>

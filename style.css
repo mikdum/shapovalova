@@ -1,0 +1,409 @@
+:root {
+			--paper: #f7f5f0;
+			--ink: #37443b;
+			--muted: #68746a;
+			--sage: #e8ebe3;
+			--line: #d9ddd3;
+			--white: #fffdf9
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		html {
+			scroll-behavior: smooth
+		}
+
+		body {
+			margin: 0;
+			background: var(--paper);
+			color: var(--ink);
+			font-family: Arial, Helvetica, sans-serif;
+			line-height: 1.6
+		}
+
+		a {
+			color: inherit
+		}
+
+		.wrap {
+			width: min(1080px, calc(100% - 40px));
+			margin: auto
+		}
+
+		header {
+			padding: 24px 0;
+			border-bottom: 1px solid var(--line)
+		}
+
+		.nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 24px
+		}
+
+		.brand {
+			font-size: 1.05rem;
+			letter-spacing: .09em;
+			font-weight: 700;
+			text-decoration: none
+		}
+
+		.nav small {
+			font-size: .72rem;
+			letter-spacing: .13em;
+			color: var(--muted)
+		}
+
+		.hero {
+			display: grid;
+			grid-template-columns: 1.1fr .9fr;
+			gap: 56px;
+			align-items: center;
+			padding: 76px 0 86px
+		}
+
+		.eyebrow {
+			text-transform: uppercase;
+			letter-spacing: .16em;
+			font-size: .72rem;
+			color: var(--muted);
+			font-weight: 700
+		}
+
+		h1,
+		h2,
+		p {
+			margin-top: 0
+		}
+
+		h1 {
+			font-family: Georgia, serif;
+			font-weight: 400;
+			font-size: clamp(2.7rem, 6vw, 5.2rem);
+			line-height: 1.04;
+			letter-spacing: -.045em;
+			margin: 18px 0 24px
+		}
+
+		.lead {
+			font-size: 1.1rem;
+			max-width: 470px;
+			color: #536052
+		}
+
+		.actions {
+			display: flex;
+			gap: 12px;
+			flex-wrap: wrap;
+			margin-top: 30px
+		}
+
+		.btn {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			padding: 13px 20px;
+			border: 1px solid #7d8b78;
+			border-radius: 3px;
+			text-decoration: none;
+			font-weight: 700;
+			font-size: .92rem;
+			transition: transform .2s, background .2s
+		}
+
+		.btn:hover {
+			transform: translateY(-1px)
+		}
+
+		.btn-primary {
+			background: #7d8b78;
+			color: white;
+			border-color: #7d8b78
+		}
+
+		.btn-secondary {
+			background: transparent
+		}
+
+		.photo-placeholder {
+			min-height: 420px;
+			background: var(--sage);
+			border-radius: 3px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 30px;
+			position: relative;
+			overflow: hidden
+		}
+
+		.photo-inner {
+			position: relative;
+			z-index: 1;
+			max-width: 230px
+		}
+
+		.photo-inner strong {
+			display: block;
+			font-family: Georgia, serif;
+			font-size: 1.6rem;
+			font-weight: 400
+		}
+
+		.photo-inner span {
+			display: block;
+			font-size: .85rem;
+			color: var(--muted);
+			margin-top: 8px
+		}
+
+		section {
+			padding: 68px 0;
+			border-top: 1px solid var(--line)
+		}
+
+		.section-grid {
+			display: grid;
+			grid-template-columns: .8fr 1.2fr;
+			gap: 56px
+		}
+
+		h2 {
+			font-family: Georgia, serif;
+			font-size: clamp(2rem, 4vw, 3.1rem);
+			font-weight: 400;
+			line-height: 1.12;
+			margin: 12px 0 20px
+		}
+
+		.body-copy {
+			max-width: 600px;
+			color: #536052
+		}
+
+		.service-list {
+			display: grid;
+			gap: 14px
+		}
+
+		.travel-row {
+			display: flex;
+			justify-content: space-between;
+			gap: 16px;
+			padding: 10px 0;
+			border-bottom: 1px solid var(--line)
+		}
+
+		.service-card {
+			background: var(--white);
+			border: 1px solid var(--line);
+			padding: 28px;
+			border-radius: 3px
+		}
+
+		.service-top {
+			display: flex;
+			justify-content: space-between;
+			gap: 16px;
+			align-items: flex-start
+		}
+
+		.service-top h3 {
+			font-family: Georgia, serif;
+			font-weight: 400;
+			font-size: 1.55rem;
+			margin: 0
+		}
+
+		.price {
+			font-size: 1.35rem;
+			font-weight: 700;
+			white-space: nowrap
+		}
+
+		.service-meta {
+			color: var(--muted);
+			font-size: .9rem;
+			margin: 8px 0 20px
+		}
+
+		.booking {
+			background: var(--sage)
+		}
+
+		.booking .section-grid {
+			align-items: start
+		}
+
+		.booking-card {
+			background: var(--white);
+			padding: 28px;
+			border: 1px solid rgba(52, 71, 59, .12);
+			border-radius: 3px
+		}
+
+		label {
+			display: block;
+			font-size: .86rem;
+			font-weight: 700;
+			margin: 0 0 7px
+		}
+
+		input,
+		select,
+		textarea {
+			width: 100%;
+			font: inherit;
+			color: var(--ink);
+			background: #fff;
+			border: 1px solid var(--line);
+			border-radius: 3px;
+			padding: 12px 13px;
+			margin-bottom: 17px
+		}
+
+		input:focus,
+		select:focus,
+		textarea:focus {
+			outline: 2px solid #8c9b87;
+			outline-offset: 1px
+		}
+
+		.form-note {
+			font-size: .82rem;
+			color: var(--muted);
+			margin: 0 0 18px
+		}
+
+		.full {
+			width: 100%;
+			cursor: pointer
+		}
+
+		.contact-line {
+			font-size: 1.05rem;
+			margin-bottom: 10px
+		}
+
+		footer {
+			padding: 24px 0;
+			color: var(--muted);
+			font-size: .82rem
+		}
+
+		.footer-row {
+			display: flex;
+			justify-content: space-between;
+			gap: 18px;
+			flex-wrap: wrap
+		}
+
+		@media(max-width:760px) {
+
+			.hero,
+			.section-grid {
+				grid-template-columns: 1fr;
+				gap: 30px
+			}
+
+			.hero {
+				padding: 50px 0 58px
+			}
+
+			.photo-placeholder {
+				min-height: 300px
+			}
+
+			.nav {
+				align-items: flex-start;
+				flex-direction: column;
+				gap: 8px
+			}
+
+			section {
+				padding: 52px 0
+			}
+
+			.wrap {
+				width: min(100% - 32px, 1080px)
+			}
+		}
+
+		/* Hento laventeli: kolmas, hillitty visuaalinen korostus */
+		:root {
+			--lavender: #a38cb1;
+			--lavender-soft: #f1ebf1
+		}
+
+		.photo-placeholder {
+			background: linear-gradient(140deg, #f0e9ed 0%, #e8ebe3 80%)
+		}
+
+		.photo-placeholder::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background: radial-gradient(circle at 80% 25%, rgba(163, 140, 177, .20), transparent 44%)
+		}
+
+		.lavender-art {
+			width: min(245px, 75%);
+			height: auto;
+			display: block;
+			margin: 0 auto 18px;
+			filter: drop-shadow(0 9px 13px rgba(65, 64, 57, .07))
+		}
+
+		.photo-inner {
+			max-width: 310px
+		}
+
+		.photo-inner strong {
+			font-size: 1.4rem
+		}
+
+		.lavender-rule {
+			width: 64px;
+			height: 2px;
+			background: var(--lavender);
+			margin: 18px 0 22px
+		}
+
+		.service-card:nth-child(2) {
+			border-left: 3px solid var(--lavender)
+		}
+
+		.booking {
+			background: linear-gradient(110deg, #e8ebe3, #f1ebf1)
+		}
+
+		@media(max-width:760px) {
+			.lavender-art {
+				width: 170px
+			}
+		}
+
+/* Hero image: adjust these dimensions as needed */
+.photo-inner {
+    width: 100%;
+    max-width: 450px;
+}
+
+.photo-inner img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+@media (max-width: 760px) {
+    .photo-inner img {
+        height: auto;
+    }
+}
+
