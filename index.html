@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#f7f5f0">
 	<meta name="description"
-		content="Klassista hierontaa Punkaharjulla. Tutustu klassiseen hierontaan, niska-hartiahierontaan ja alavartalon hierontaan. Myös kotikäynnit Punkaharjulla ja Savonlinnassa. Varaa WhatsAppissa.">
+		content="Klassista hierontaa Punkaharjulla. Hieronta, niskahieronta, alavartalon hieronta, kotikäynnit ja joulun lahjakortit.">
 	<title>Iuliia Shapovalova | Klassista hierontaa Punkaharjulla</title>
 	<link rel="stylesheet" href="./style.css">
 </head>
@@ -27,9 +27,8 @@
 				<div class="actions"><a class="btn btn-primary" href="#varaa">Varaa hieronta</a><a
 						class="btn btn-secondary" href="#palvelut">Tutustu palveluun</a></div>
 			</div>
-			<div class="photo-inner">
-				<img src="./img/img1.jpeg" alt="Laventelin oksia">
-			</div>
+			<div class="photo-inner"><img src="./img/img1.jpeg" alt="Laventelin oksia"
+					onerror="this.style.display='none'"></div>
 		</div>
 		<section id="minusta">
 			<div class="wrap section-grid">
@@ -53,7 +52,18 @@
 					<p class="body-copy">Valitse itsellesi sopiva hieronta. Kotikäynnit ovat saatavilla Punkaharjulla ja
 						Savonlinnassa lisämaksusta.</p>
 				</div>
-				<div class="service-list">
+				<div class="gift-card">
+					<div class="eyebrow">Joulun lahjaidea</div>
+					<h3>Anna lahjaksi hetki rentoutumista</h3><a class="gift-link"
+						href="https://wa.me/358417945460?text=Hei%21%20Haluaisin%20tilata%20joulun%20s%C3%A4hk%C3%B6isen%20lahjakortin%3A%2060%20min%20hieronta%2C%2030%20%E2%82%AC."
+						target="_blank" rel="noopener noreferrer"
+						aria-label="Tilaa joulun lahjakortti WhatsAppissa"><img src="./img/img2.jpeg"
+							alt="Joulun lahjakortti: 60 minuutin rentouttava hieronta, 30 euroa. Tilaa WhatsAppissa."></a><a
+						class="btn btn-primary"
+						href="https://wa.me/358417945460?text=Hei%21%20Haluaisin%20tilata%20joulun%20s%C3%A4hk%C3%B6isen%20lahjakortin%3A%2060%20min%20hieronta%2C%2030%20%E2%82%AC."
+						target="_blank" rel="noopener noreferrer">Tilaa lahjakortti WhatsAppissa</a>
+				</div>
+			<div class="service-list">
 					<div class="service-card">
 						<div class="service-top">
 							<h3>Klassinen hieronta</h3>
@@ -83,8 +93,7 @@
 						<div class="travel-row"><span>Punkaharju</span><strong>+10 €</strong></div>
 						<div class="travel-row"><span>Savonlinna</span><strong>+20 €</strong></div>
 						<p class="service-meta">Kotikäyntilisä lisätään valitun hieronnan hintaan.</p>
-					</div>
-					<a class="btn btn-primary" href="#varaa">Varaa aika</a>
+					</div><a class="btn btn-primary" href="#varaa">Varaa aika</a>
 				</div>
 			</div>
 		</section>
@@ -99,25 +108,25 @@
 					</p>
 				</div>
 				<form class="booking-card" id="bookingForm"><label for="name">Nimi</label><input id="name" name="name"
-						autocomplete="name" placeholder="Etunimi ja sukunimi" required>
-					<label for="phone">Puhelinnumero</label><input id="phone" name="phone" type="tel" autocomplete="tel"
-						placeholder="Puhelinnumerosi" required>
-					<label for="service">Valitse hieronta</label><select id="service" name="service" required>
+						autocomplete="name" placeholder="Etunimi ja sukunimi" required><label
+						for="phone">Puhelinnumero</label><input id="phone" name="phone" type="tel" autocomplete="tel"
+						placeholder="Puhelinnumerosi" required><label for="service">Valitse hieronta</label><select
+						id="service" name="service" required>
 						<option value="">Valitse palvelu</option>
 						<option value="classic">Klassinen hieronta · 60 min · 30 €</option>
 						<option value="neck">Niskahieronta · 30 min · 20 €</option>
 						<option value="lower">Alavartalon hieronta · 45 min · 30 €</option>
-					</select>
-					<label for="location">Hieronnan paikka</label><select id="location" name="location" required>
+					</select><label for="location">Hieronnan paikka</label><select id="location" name="location"
+						required>
 						<option value="">Valitse paikka</option>
 						<option value="studio">Punkaharju (ei kotikäyntiä) · +0 €</option>
 						<option value="punkaharju">Kotikäynti Punkaharjulla · +10 €</option>
 						<option value="savonlinna">Kotikäynti Savonlinnassa · +20 €</option>
 					</select>
 					<p id="total" class="form-note" aria-live="polite">Valitse palvelu ja paikka nähdäksesi
-						kokonaishinnan.</p>
-					<label for="date">Toivottu päivämäärä</label><input id="date" name="date" type="date" required>
-					<label for="time">Toivottu kellonaika</label><select id="time" name="time" required>
+						kokonaishinnan.</p><label for="date">Toivottu päivämäärä</label><input id="date" name="date"
+						type="date" required><label for="time">Toivottu kellonaika</label><select id="time" name="time"
+						required>
 						<option value="">Valitse kellonaika</option>
 						<option>09:00</option>
 						<option>10:00</option>
@@ -129,9 +138,8 @@
 						<option>16:00</option>
 						<option>17:00</option>
 						<option>18:00</option>
-					</select>
-					<label for="message">Lisätietoja (vapaaehtoinen)</label><textarea id="message" name="message"
-						rows="3" placeholder="Voit kirjoittaa tähän lisätietoja"></textarea>
+					</select><label for="message">Lisätietoja (vapaaehtoinen)</label><textarea id="message"
+						name="message" rows="3" placeholder="Voit kirjoittaa tähän lisätietoja"></textarea>
 					<p class="form-note">Painamalla painiketta siirryt WhatsAppiin lähettämään varauspyynnön.</p><button
 						class="btn btn-primary full" type="submit">Lähetä varauspyyntö WhatsAppissa</button>
 				</form>
@@ -147,8 +155,9 @@
 					<p class="contact-line"><strong>Iuliia Shapovalova</strong></p>
 					<p class="contact-line">Punkaharju, Suomi</p>
 					<p class="contact-line"><a href="https://wa.me/358417945460" target="_blank"
-							rel="noopener">WhatsApp: +358 41 794 5460</a></p><a class="btn btn-secondary"
-						href="https://wa.me/358417945460" target="_blank" rel="noopener">Ota yhteyttä WhatsAppissa</a>
+							rel="noopener noreferrer">WhatsApp: +358 41 794 5460</a></p><a class="btn btn-secondary"
+						href="https://wa.me/358417945460" target="_blank" rel="noopener noreferrer">Ota yhteyttä
+						WhatsAppissa</a>
 				</div>
 			</div>
 		</section>
