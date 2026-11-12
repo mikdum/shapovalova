@@ -321,18 +321,19 @@ h3 {
 }
 
 
-/* Адаптивная картинка подарочного сертификата */
+/* Вторая фотография: визуальный размер как у первой */
 #palvelut .gift-card,
 #palvelut .gift-banner {
     width: 100%;
-    max-width: 620px;
+    max-width: 510px;
     margin: 20px auto 28px;
 }
 
 #palvelut img[src*="img2.jpeg"] {
     display: block;
     width: 100%;
-    max-width: 620px;
+    max-width: 510px;
+    max-height: 510px;
     height: auto;
     object-fit: contain;
     border-radius: 14px;
@@ -347,16 +348,14 @@ h3 {
     margin: 14px auto 0;
 }
 
-/* Мобильные устройства */
 @media (max-width: 768px) {
     #palvelut .section-grid {
         grid-template-columns: 1fr;
     }
 
     #palvelut img[src*="img2.jpeg"] {
-        width: 100%;
         max-width: 100%;
-        height: auto;
+        max-height: 380px;
         border-radius: 10px;
     }
 }
